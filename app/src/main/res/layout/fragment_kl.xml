@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".klFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_dynamic_secondary70">
+
+        <TextView
+            android:id="@+id/kl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kuliner"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.089"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/masak"
+            android:layout_width="360dp"
+            android:layout_height="280dp"
+            android:background="@drawable/img_2"
+            android:layout_margin="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kl"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Di Indonesia, jurusan kuliner dikenal dengan nama jurusan tata boga. Pada jurusan ini, kamu akan mempelajari tentang seni mengolah makanan, mulai dari persiapan bahan makanan, pengolahan, memasak, hingga bagaimana menghidangkannya"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/masak"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
